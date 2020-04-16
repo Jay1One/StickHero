@@ -121,7 +121,7 @@ public class StickHeroController : MonoBehaviour
     public void ShowScores()
     {
         currentGameState = EGameState.Defeate;
-        print($"$Game Over. Your Score: {m_Player.transform.position.x* 4} m");
+        print($"$Game Over. Your Score: {(m_Player.transform.position.x* 4).ToString("n2")} m");
     }
 
     //Сдвигаем первую платформу в конец поля и массива платформ
